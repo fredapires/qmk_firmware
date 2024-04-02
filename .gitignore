@@ -96,6 +96,7 @@ tags
 /.vs
 id_rsa_*
 secrets.tar
+/lib/lufa/.git
 
 # Python things
 __pycache__
