@@ -1,4 +1,29 @@
-# Quantum Mechanical Keyboard Firmware
+# fp-qmk-firmware
+
+- this is the fp fork of the QMK firmware
+- this fork is for the purposes of editing keymaps and reflashing the firmware for the following keyboards:
+    - wireless redox
+    - XD75
+    - others
+
+## General Instructions for flashing
+
+- Requirements
+    - asdf
+
+### Wireless Redox
+
+- [Link to Wireless Redox keymap](keyboards\redox\keymaps\fp-redox\keymap.c)
+
+1. asdf
+
+### XD75
+
+- [Link to XD75 keymap](keyboards\xiudi\xd75\keymaps\fp-xd75\keymap.c)
+
+1. asdf
+
+## Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
@@ -34,3 +59,17 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+## fp-qmk-firmware: user specific notes
+
+### re-Flashing the Wireless Redox
+
+1. asdf
+2. asdf
+3. asdf
+
+### re-Flashing the XD75
+
+1. asdf
+2. asdf
+3. asdf
