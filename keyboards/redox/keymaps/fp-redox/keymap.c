@@ -21,8 +21,6 @@
 #define _LNUM 6     // Left hand mod layer for numbers and arithmetic
 #define _RNAV 7     // Right hand mod layer for navigation
 
-
-
 // -----------------------------------
 // Layer switch keycodes
 // -----------------------------------
@@ -34,10 +32,6 @@
 #define MO_ADJS MO(_ADJS)
 #define MO_MOUS MO(_MOUS)
 #define TO_FPSG TO(_FPSG)
-
-
-
-
 
 // -----------------------------------
 // Custom Keycodes

@@ -16,3 +16,5 @@
 ifndef QUANTUM_DIR
 	include ../../../../Makefile
 endif
+
+GRAVE_ESC_ENABLE = yes
