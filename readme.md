@@ -23,6 +23,8 @@
 
 1. update [keymapping](keyboards\redox\keymaps\fp-redox\keymap.c) linked above with changes
 2. compile and build the firmware using `QMK_MSYS.exe`
+    1. command: `qmk compile -kb redox/wireless -km fp-redox`
+3. flash the firmware to the controller using `qmk_toolbox.exe`
 
 ### XD75
 
@@ -30,6 +32,7 @@
 
 1. update [keymapping](keyboards\redox\keymaps\fp-redox\keymap.c) linked above with changes
 2. compile and build the firmware using `QMK_MSYS.exe`
+    1. command: `qmk compile -kb xiudi/xd75 -km fp-xd75`
 3. flash the firmware to the controller using `qmk_toolbox.exe`
 
 ## Quantum Mechanical Keyboard Firmware
