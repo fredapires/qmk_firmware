@@ -2,14 +2,16 @@
 
 - this is the fp fork of the QMK firmware
 - this fork is for the purposes of editing keymaps and reflashing the firmware for the following keyboards:
-    - wireless redox
+    - Redox Wireless
     - XD75
-    - others
+    - others to come
 
 ## General Instructions for flashing
 
 - Requirements
-    - asdf
+    - `QMK_MSYS.exe`
+    - `qmk_toolbox.exe`
+    - a local clone of the `qmk_firmware` repo
 
 ## Other notes (fp-)
 
@@ -19,13 +21,16 @@
 
 - [Link to Wireless Redox keymap](keyboards\redox\keymaps\fp-redox\keymap.c)
 
-1. asdf
+1. update [keymapping](keyboards\redox\keymaps\fp-redox\keymap.c) linked above with changes
+2. compile and build the firmware using `QMK_MSYS.exe`
 
 ### XD75
 
 - [Link to XD75 keymap](keyboards\xiudi\xd75\keymaps\fp-xd75\keymap.c)
 
-1. asdf
+1. update [keymapping](keyboards\redox\keymaps\fp-redox\keymap.c) linked above with changes
+2. compile and build the firmware using `QMK_MSYS.exe`
+3. flash the firmware to the controller using `qmk_toolbox.exe`
 
 ## Quantum Mechanical Keyboard Firmware
 

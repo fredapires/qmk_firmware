@@ -118,7 +118,6 @@ enum custom_keycodes {
 #define KC_RCKS RCTL_T(KC_SCLN) // RCtl over Semicolon
 #define KC_RCEN RCTL_T(KC_ENT)  // RCtl over Ent
 
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_BASE] = {
