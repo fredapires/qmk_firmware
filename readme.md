@@ -63,17 +63,3 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
-
-## fp-qmk-firmware: user specific notes
-
-### re-Flashing the Wireless Redox
-
-1. asdf
-2. asdf
-3. asdf
-
-### re-Flashing the XD75
-
-1. asdf
-2. asdf
-3. asdf
