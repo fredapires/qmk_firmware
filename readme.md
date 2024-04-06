@@ -11,6 +11,10 @@
 - Requirements
     - asdf
 
+## Other notes (fp-)
+
+- [Keycode docss](docs\keycodes.md)
+
 ### Wireless Redox
 
 - [Link to Wireless Redox keymap](keyboards\redox\keymaps\fp-redox\keymap.c)

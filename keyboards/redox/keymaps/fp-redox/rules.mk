@@ -8,7 +8,7 @@ MCU = atmega32u4
 # Build Options
 #   change yes to no to disable
 #
-COMBO_ENABLE = yes 			# enable combos
+COMBO_ENABLE = no 			# enable combos
 EXTRAKEY_ENABLE  = yes  	# Audio control and System control
 NKRO_ENABLE      = yes      # Enable N-Key Rollover
 CONSOLE_ENABLE = no        # Console for debug(+400)

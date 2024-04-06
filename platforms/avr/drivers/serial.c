@@ -11,13 +11,15 @@
 #    define F_CPU 16000000
 #endif
 
-#include <avr/io.h>
+#include <avr/gpio.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <stddef.h>
 #include <stdbool.h>
 #include "gpio.h"
 #include "serial.h"
+
+#define SOFT_SERIAL_PIN D0 /// not sure about this
 
 #ifdef SOFT_SERIAL_PIN
 

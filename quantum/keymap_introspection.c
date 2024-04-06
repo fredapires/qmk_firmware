@@ -109,3 +109,6 @@ __attribute__((weak)) combo_t* combo_get(uint16_t combo_idx) {
 }
 
 #endif // defined(COMBO_ENABLE)
+
+
+// qmk compile -kb redox/wireless -km fp-redox

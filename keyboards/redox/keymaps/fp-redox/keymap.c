@@ -9,6 +9,8 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 
+#define COMBO_ENABLE no
+
 // -----------------------------------
 // Layer Definitions
 // -----------------------------------
@@ -68,25 +70,11 @@
 #define KC_CPGD LCTL(KC_PGDN)          // Ctrl + PgDn ; next tab in various applications
 #define KC_CPGU LCTL(KC_PGUP)          // Ctrl + PgUp ; previous tab in various applications
 
-
 #define KC_STAB LSFT(KC_TAB)           // Shift + Tab ; 
-
-// Shift Layer (OLD)
-#define KC_SFTA LSFT(KC_A)
-#define KC_SFTQ LSFT(KC_Q)
-#define KC_SFTW LSFT(KC_W)
-#define KC_SFTE LSFT(KC_E)
-#define KC_SFTR LSFT(KC_R)
-#define KC_SFTT LSFT(KC_T)
-#define KC_SFTG LSFT(KC_G)
-#define KC_SFTZ LSFT(KC_Z)
-#define KC_SFTX LSFT(KC_X)
-#define KC_SFTV LSFT(KC_V)
-#define KC_SFTB LSFT(KC_B)
 
 // Arithmetic
 #define KC_UNDR LSFT(KC_MINS)   // Minus
-#define KC_PLUS LSFT(KC_EQL)    // Plus
+// #define KC_PLUS LSFT(KC_EQL)    // Plus
 #define KC_GRTN LSFT(KC_DOT)    // Greater than
 #define KC_LSTN LSFT(KC_COMM)   // Less than
 #define KC_MULT LSFT(KC_8)      // Multiply
@@ -109,15 +97,12 @@
 #define KC_LPAR LSFT(KC_9)          // Open parenthesis
 #define KC_RPAR LSFT(KC_0)          // Close parenthesis
 
-#define KC_LCBR LSFT(KC_LBRC)       // Open curly brackets
-#define KC_RCBR LSFT(KC_RBRC)       // Close curly brackets
-
+// #define KC_LCBR LSFT(KC_LBRC)       // Open curly brackets
+// #define KC_RCBR LSFT(KC_RBRC)       // Close curly brackets
 
 // Excel
 #define KC_LCA9 LCA(KC_F9) // Ctrl + Alt + F9 ; Excel recalc all sheets
 #define KC_SF11 LSFT(KC_F11) // Shft + F11 ; Excel new sheet // SOMEDAY 22-03-27: adapt excel convention to conform with other applications; aka change this to Ctrl + T or something
-
-
 
 // Homerow tap-Hold definitions
 #define KC_LCKA LCTL_T(KC_A)    // LCtl over A
@@ -129,6 +114,7 @@
 #define KC_RAKK RALT_T(KC_K)    // RAlt over K
 #define KC_RGKL RGUI_T(KC_L)    // RGui over L
 #define KC_RCKS RCTL_T(KC_SCLN) // RCtl over Semicolon
+#define KC_RCEN RCTL_T(KC_ENT)  // RCtl over Ent
 
 // ------------------------------------
 
@@ -420,7 +406,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ADJS] = LAYOUT(
     //┌────────┬────────┬────────┬────────┬────────┬────────┐                                           ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       M_WINSLP,TO_BASE ,TO_FPSG ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,RESET   ,
+       M_WINSLP,TO_BASE ,TO_FPSG ,_______ ,_______ ,_______ ,                                            _______ ,_______ ,_______ ,_______ ,_______ ,QK_BOOT ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐                         ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
        _______ ,BL_TOGG ,BL_STEP ,_______ ,_______ ,_______ ,_______ ,                          _______ ,_______ ,KC_MUTE ,KC_VOLU ,KC_MPLY ,_______ ,_______ ,
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
