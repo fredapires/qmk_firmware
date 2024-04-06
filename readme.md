@@ -34,6 +34,7 @@
 2. compile and build the firmware using `QMK_MSYS.exe`
     1. command: `qmk compile -kb xiudi/xd75 -km fp-xd75`
 3. flash the firmware to the controller using `qmk_toolbox.exe`
+    1. be sure to have `qmk_toolbox.exe` set to `Auto-flash` mode before flashing this one.
 
 ## Quantum Mechanical Keyboard Firmware
 
