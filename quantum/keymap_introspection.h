@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Key mapping
 
@@ -47,10 +48,12 @@ uint16_t keycode_at_dip_switch_map_location(uint8_t switch_idx, bool on);
 
 #endif // defined(DIP_SWITCH_ENABLE) && defined(DIP_SWITCH_MAP_ENABLE)
 
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Combos
 
-#if defined(COMBO_ENABLE)
+// #if defined(COMBO_ENABLE)
 
 // Forward declaration of combo_t so we don't need to deal with header reordering
 struct combo_t;
@@ -61,9 +64,15 @@ uint16_t combo_count_raw(void);
 // Get the number of combos defined in the user's keymap, potentially stored dynamically
 uint16_t combo_count(void);
 
+
+// typedef struct combo_t {
+//     int key; // Example member
+//     // Add other members as needed
+// } combo_t;
+
 // Get the keycode for the encoder mapping location, stored in firmware rather than any other persistent storage
 combo_t* combo_get_raw(uint16_t combo_idx);
 // Get the keycode for the encoder mapping location, potentially stored dynamically
 combo_t* combo_get(uint16_t combo_idx);
 
-#endif // defined(COMBO_ENABLE)
+// #endif // defined(COMBO_ENABLE)

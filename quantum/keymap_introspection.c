@@ -92,7 +92,56 @@ uint16_t keycode_at_dip_switch_map_location(uint8_t switch_idx, bool on) {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Combos
 
-#if defined(COMBO_ENABLE)
+// ///////////////////////////////
+// // ChatGPT generated code for resolving issue quickly
+// // In a header file (e.g., combo.h)
+// typedef struct {
+//     // Structure members go here
+//     // Example:
+//     int key;
+//     // Add other members as needed
+// } combo_t;
+
+// // Declare and optionally initialize key_combos
+// SOME_SIZE = 2;
+
+// combo_t key_combos[SOME_SIZE] = {
+//     // Initialize each element of the array
+//     { .key = 1 /*, other members as needed */ },
+//     { .key = 2 /*, other members as needed */ },
+//     // Add more combos as needed
+// };
+
+// // If you need to declare it without initializing, you might do:
+// // combo_t key_combos[SOME_SIZE];
+// // Make sure to define SOME_SIZE with the actual size of the array you need.
+// ///////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Combos
+
+// #if defined(COMBO_ENABLE)
+
+// Forward declaration of combo_t so we don't need to deal with header reordering
+// struct combo_t;
+// typedef struct combo_t combo_t;
+
+// Get the number of combos defined in the user's keymap, stored in firmware rather than any other persistent storage
+// uint16_t combo_count_raw(void);
+// Get the number of combos defined in the user's keymap, potentially stored dynamically
+uint16_t combo_count(void);
+typedef struct combo_t {
+    int key; // Example member
+    // Add other members as needed
+} combo_t;
+combo_t key_combos[] = {
+    // Initialize each element of the array
+    { .key = 1 /*, other members as needed */ },
+    { .key = 2 /*, other members as needed */ },
+    // Add more combos as needed
+};
+
+// #if defined(COMBO_ENABLE)
 
 uint16_t combo_count_raw(void) {
     return sizeof(key_combos) / sizeof(combo_t);
@@ -108,7 +157,7 @@ __attribute__((weak)) combo_t* combo_get(uint16_t combo_idx) {
     return combo_get_raw(combo_idx);
 }
 
-#endif // defined(COMBO_ENABLE)
+// #endif // defined(COMBO_ENABLE)
 
 
 // qmk compile -kb redox/wireless -km fp-redox
