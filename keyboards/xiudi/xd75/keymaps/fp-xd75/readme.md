@@ -7,4 +7,3 @@
 1. edit keymap in VS Code
 2. Build with 'QMK-MSYS'
 3. Flash with 'qmk_toolbox.exe'
-
