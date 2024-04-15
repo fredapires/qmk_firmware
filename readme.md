@@ -1,3 +1,15 @@
+
+# fp_qmk_firmware adds
+
+## How to flash the Wireless Redox from Falbatech
+
+- Run `QMK MSYS.exe`
+- run command: `qmk compile -kb redox/wireless -km fp-redox
+- run `qmk_toolbox.exe`
+- turn on `Auto-flash`
+- press the button on the Pro Micro Controller
+    - try using a paperclip to press the button
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
