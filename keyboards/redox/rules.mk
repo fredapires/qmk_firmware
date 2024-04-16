@@ -1,4 +1,4 @@
-DEFAULT_FOLDER = redox/rev1/base
+DEFAULT_FOLDER = redox/wireless
 
 # Disable unsupported hardware
 AUDIO_SUPPORTED = no
