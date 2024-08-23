@@ -26,6 +26,10 @@
     1. command: `qmk compile -kb redox/wireless -km fp-redox`
 3. flash the firmware to the controller using `qmk_toolbox.exe`
 
+From what I remember, the wireless redox has a reset button on the receiver dongle.
+You will need to press this button to put the keyboard into bootloader mode before flashing the firmware.
+The window of time for `qmk_toolbox.exe` to detect the keyboard is very short, so be ready to press the reset button on the receiver dongle and then immediately flash the firmware.
+
 ### XD75
 
 - [Link to XD75 keymap](keyboards\xiudi\xd75\keymaps\fp-xd75\keymap.c)
